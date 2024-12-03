@@ -15,7 +15,7 @@
   🎥
 </a><br><a href="#" target="_blank">
   🌍
-</a><br><a href="#" target="_blank">
+</a><br><a href="https://bsky.app/profile/skyboundxenon.bsky.social" target="_blank">
   🌍
 </a>
 
