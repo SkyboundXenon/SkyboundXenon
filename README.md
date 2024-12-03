@@ -1,4 +1,23 @@
 ## Hi there 👋
+<a href="https://www.youtube.com/@SkyboundXenon2?sub_confirmation=1" target="_blank">
+  📺
+</a><br><a href="#" target="_blank">
+  🎶
+</a><br><a href="#" target="_blank">
+  🔴
+</a><br><a href="#" target="_blank">
+  📚
+</a><br><a href="#" target="_blank">
+  🍳
+</a><br><a href="#" target="_blank">
+   🎮
+</a><br><a href="#" target="_blank">
+  🎥
+</a><br><a href="#" target="_blank">
+  🌍
+</a><br><a href="#" target="_blank">
+  🌍
+</a>
 
 <!--
 **SkyboundXenon/SkyboundXenon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
