@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to [Your Server Name]</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .rules {
+            text-align: left;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .modal-header {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to [Your Server Name]</h1>
+    <p>We’re glad to have you! Please check out our rules below:</p>
+    
+    <div class="rules">
+        <ul>
+            <li>The 10 SkyboundXenon Server Rules</li><!--- /  / --->
+            <li>Be Respectful and Civil</li><!--- / / --->
+            <li>18+ Only</li><!--- / / --->
+            <li>No Spamming</li><!--- / / --->
+            <li>No Explicit Content or NSFW</li><!--- / / --->
+            <li>Keep Private Information Private</li><!--- / / --->
+            <li>No Advertising or Self-Promotion</li><!--- / / --->
+            <li>Respect Channel Topics</li><!--- / / --->
+            <li>Use Appropriate Language</li><!--- / / --->
+            <li>No Hate Speech or Discriminatory Remarks</li><!--- / / --->
+            <li>Follow The 10 SkyboundXenon Server Rules Terms of Service</li><!--- / / --->  
+        </ul>
+      <!--- /The 10 SkyboundXenon Server Rules
+Be Respectful and Civil
+Treat all members with respect and kindness. Discrimination, harassment, hate speech, and any form of toxic behavior will not be tolerated.
+18+ Only
+This server is for members aged 18 and older. If you are under 18, you will be immediately banned upon discovery.
+No Spamming
+Spamming messages, emotes, links, or excessive tagging is disruptive and not allowed. Keep conversations clear and relevant.
+No Explicit Content or NSFW
+Explicit content, pornography, or overly graphic discussions (including sexual content) are strictly prohibited. This is an 18+ server, but please respect boundaries and avoid offensive material.
+Keep Private Information Private
+Do not share personal information (yours or others’) without consent. This includes real names, addresses, and private chats. Privacy is paramount!
+No Advertising or Self-Promotion
+Unsolicited advertising, including promoting other servers, websites, or social media accounts, is prohibited unless explicitly allowed in designated channels.
+Respect Channel Topics
+Each channel has a designated purpose. Please keep discussions relevant to the topic of the channel you're in. Off-topic chats belong in the appropriate channels.
+Use Appropriate Language
+While we understand this is an 18+ server, excessive swearing, offensive language, and trolling will not be tolerated. Keep the atmosphere friendly and mature.
+No Hate Speech or Discriminatory Remarks
+Any form of hate speech, racism, sexism, homophobia, transphobia, or any other discriminatory behavior will result in an immediate ban.
+Follow The 10 SkyboundXenon Server Rules Terms of Service
+All members are expected to comply with The 10 SkyboundXenon Server Rules Terms of Service and Community Guidelines. Violating these rules can result in server removal and potential action from Discord.
+/ --->
+    </div>
+    
+    <a href="mailto:your-email@example.com" class="btn">Email Us for Inquiries</a>
+    
+    <button id="downloadModalBtn" class="btn">Download Server File</button>
+    <button id="seedModalBtn" class="btn">View Server Seed</button>
+    
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="downloadClose">&times;</span>
+            <div class="modal-header">Download Server File</div>
+            <p>Click the link below to download the server file:</p>
+            <a href="your-file-link.zip" download class="btn">Download Server File</a>
+        </div>
+    </div>
+    
+    <!-- Seed Modal -->
+    <div id="seedModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="seedClose">&times;</span>
+            <div class="modal-header">Server Seed</div>
+            <p>The server seed is: <strong>[YOUR_SERVER_SEED]</strong></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Modal for download
+    var downloadModal = document.getElementById("downloadModal");
+    var downloadBtn = document.getElementById("downloadModalBtn");
+    var downloadClose = document.getElementById("downloadClose");
+    
+    downloadBtn.onclick = function() {
+        downloadModal.style.display = "block";
+    }
+    
+    downloadClose.onclick = function() {
+        downloadModal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == downloadModal) {
+            downloadModal.style.display = "none";
+        }
+    }
+    
+    // Modal for seed
+    var seedModal = document.getElementById("seedModal");
+    var seedBtn = document.getElementById("seedModalBtn");
+    var seedClose = document.getElementById("seedClose");
+    
+    seedBtn.onclick = function() {
+        seedModal.style.display = "block";
+    }
+    
+    seedClose.onclick = function() {
+        seedModal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == seedModal) {
+            seedModal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
