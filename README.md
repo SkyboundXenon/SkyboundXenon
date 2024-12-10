@@ -16,3 +16,13 @@
 <a href="#" target="_blank">🎥</a>&nbsp;
 <a href="#" target="_blank">🌍</a>&nbsp;
 <a href="https://bsky.app/profile/skyboundxenon.bsky.social" target="_blank">🌍</a><br><br>
+<br>
+૮( ˃ ꒳ ˂)ა〝₎₎ YAYYYYYY ✦₊ ˊ˗ 
+╭∪─∪──────────────── ✦ ⁺.
+┊ .*
+┊﹒*
+┊ .*
+┊.*
+┊ .*
+┊﹒*
+╰─────────────────── ✦ ⁺.
